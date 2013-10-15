@@ -318,8 +318,8 @@ class CleanupHandler(webapp2.RequestHandler):
 ################################################################################
 
 app = webapp2.WSGIApplication([
-  (r"/", HomeHandler),
-  (r"/main", HomeHandler),
+  (r"/", CleanupHandler),
+  (r"/connect", HomeHandler),
   (r"/kaboom", KaboomHandler),
   (r"/admin", AdminHandler),
   (r"/cleanup", CleanupHandler),
